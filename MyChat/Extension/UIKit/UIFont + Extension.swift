@@ -15,7 +15,7 @@ extension UIFont {
     }
     
     static func avenir26() -> UIFont? {
-        return UIFont.init(name: "avanir", size: 26)
+        return UIFont.init(name: "avanir", size: 35)
     }
     
 }
