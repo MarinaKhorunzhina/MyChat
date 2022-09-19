@@ -23,7 +23,7 @@ class AuthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.9047287703, green: 0.9161183238, blue: 0.9159179926, alpha: 1)
         setupConstraints()
     }
 }

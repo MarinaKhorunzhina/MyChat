@@ -21,6 +21,7 @@
 		9CEF598428D757C600F55A09 /* FilStackView + Entension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF598328D757C600F55A09 /* FilStackView + Entension.swift */; };
 		9CEF598628D775FD00F55A09 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF598528D775FD00F55A09 /* SignUpViewController.swift */; };
 		9CEF598828D77AC900F55A09 /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF598728D77AC900F55A09 /* OneLineTextField.swift */; };
+		9CEF598A28D8D41000F55A09 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF598928D8D41000F55A09 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		9CEF598328D757C600F55A09 /* FilStackView + Entension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilStackView + Entension.swift"; sourceTree = "<group>"; };
 		9CEF598528D775FD00F55A09 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9CEF598728D77AC900F55A09 /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
+		9CEF598928D8D41000F55A09 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				9CEF596328D6FF8E00F55A09 /* SceneDelegate.swift */,
 				9CEF596528D6FF8E00F55A09 /* AuthViewController.swift */,
 				9CEF598528D775FD00F55A09 /* SignUpViewController.swift */,
+				9CEF598928D8D41000F55A09 /* LoginViewController.swift */,
 				9CEF598028D72B6F00F55A09 /* Extension */,
 				9CEF596A28D6FF8F00F55A09 /* Assets.xcassets */,
 				9CEF596C28D6FF8F00F55A09 /* LaunchScreen.storyboard */,
@@ -187,6 +190,7 @@
 				9CEF596228D6FF8E00F55A09 /* AppDelegate.swift in Sources */,
 				9CEF597E28D7146F00F55A09 /* UIImageView + Extension.swift in Sources */,
 				9CEF597A28D7121600F55A09 /* UIColor + Extension.swift in Sources */,
+				9CEF598A28D8D41000F55A09 /* LoginViewController.swift in Sources */,
 				9CEF596428D6FF8E00F55A09 /* SceneDelegate.swift in Sources */,
 				9CEF597628D70EFF00F55A09 /* UIButton + Extension.swift in Sources */,
 			);
