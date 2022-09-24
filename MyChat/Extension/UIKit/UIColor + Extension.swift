@@ -5,7 +5,7 @@
 //  Created by Marina on 18.09.22.
 //
 
-import Foundation
+
 import UIKit
 
 extension UIColor {
@@ -15,7 +15,7 @@ extension UIColor {
     }
     
     static func mainWhite() -> UIColor {
-        return #colorLiteral(red: 0.968627451, green: 0.9725490196, blue: 0.9921568627, alpha: 1)
+        return #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
     }
     
     static func buttonDark() -> UIColor {
