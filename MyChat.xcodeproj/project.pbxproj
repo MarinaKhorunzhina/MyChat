@@ -14,6 +14,7 @@
 		9C1B24AF28E4C57E008C19C7 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B24AE28E4C57E008C19C7 /* waitingChats.json */; };
 		9C1B24B128E76CA6008C19C7 /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B24B028E76CA6008C19C7 /* WaitingChatCell.swift */; };
 		9C1B24B328E76CF3008C19C7 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B24B228E76CF3008C19C7 /* SelfConfiguringCell.swift */; };
+		9C1B24B728E98961008C19C7 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B24B628E98961008C19C7 /* SectionHeader.swift */; };
 		9CEF596228D6FF8E00F55A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF596128D6FF8E00F55A09 /* AppDelegate.swift */; };
 		9CEF596428D6FF8E00F55A09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF596328D6FF8E00F55A09 /* SceneDelegate.swift */; };
 		9CEF596628D6FF8E00F55A09 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF596528D6FF8E00F55A09 /* AuthViewController.swift */; };
@@ -45,6 +46,7 @@
 		9C1B24AE28E4C57E008C19C7 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waitingChats.json; sourceTree = "<group>"; };
 		9C1B24B028E76CA6008C19C7 /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
 		9C1B24B228E76CF3008C19C7 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
+		9C1B24B628E98961008C19C7 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		9CEF595E28D6FF8E00F55A09 /* MyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEF596128D6FF8E00F55A09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CEF596328D6FF8E00F55A09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				9C1B24B528E76E2F008C19C7 /* Cell */,
 				9CEF599228DCE4EE00F55A09 /* MainTabBarController.swift */,
 				9CEF599428DCE50400F55A09 /* ListViewController.swift */,
+				9C1B24B628E98961008C19C7 /* SectionHeader.swift */,
 				9CEF599628DCE52B00F55A09 /* PeopleViewController.swift */,
 			);
 			path = Controllers;
@@ -255,6 +258,7 @@
 			files = (
 				9CEF598828D77AC900F55A09 /* OneLineTextField.swift in Sources */,
 				9CEF598628D775FD00F55A09 /* SignUpViewController.swift in Sources */,
+				9C1B24B728E98961008C19C7 /* SectionHeader.swift in Sources */,
 				9C1B24AB28E4C3F1008C19C7 /* GradientView.swift in Sources */,
 				9CEF597828D7107200F55A09 /* UIFont + Extension.swift in Sources */,
 				9C1B24A328E21147008C19C7 /* ActiveChatCell.swift in Sources */,
