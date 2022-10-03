@@ -10,7 +10,7 @@ import UIKit
 class UserCell: UICollectionViewCell, SelfConfiguringCell {
     
     let userImageView = UIImageView()
-    let userName = UILabel(text: "Alexey", font: .laoSangamMN20())
+    let userName = UILabel(text: "", font: .laoSangamMN20())
     let containerView = UIView()
     
     
@@ -46,7 +46,7 @@ class UserCell: UICollectionViewCell, SelfConfiguringCell {
         userImageView.translatesAutoresizingMaskIntoConstraints = false
         userName.translatesAutoresizingMaskIntoConstraints = false
         containerView.translatesAutoresizingMaskIntoConstraints = false
-        userImageView.backgroundColor = .red
+       
         
         addSubview(containerView)
         containerView.addSubview(userImageView)
