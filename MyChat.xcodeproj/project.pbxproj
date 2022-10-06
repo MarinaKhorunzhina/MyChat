@@ -23,6 +23,7 @@
 		9C1B24C728EB4BDF008C19C7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B24C628EB4BDF008C19C7 /* ProfileViewController.swift */; };
 		9C1B24C928EDEFEF008C19C7 /* InsertableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B24C828EDEFEF008C19C7 /* InsertableTextField.swift */; };
 		9C1B24CB28EDF02E008C19C7 /*  UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B24CA28EDF02E008C19C7 /*  UIView + Extension.swift */; };
+		9C1B24CD28EF3877008C19C7 /* ChatRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B24CC28EF3877008C19C7 /* ChatRequestViewController.swift */; };
 		9CEF596228D6FF8E00F55A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF596128D6FF8E00F55A09 /* AppDelegate.swift */; };
 		9CEF596428D6FF8E00F55A09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF596328D6FF8E00F55A09 /* SceneDelegate.swift */; };
 		9CEF596628D6FF8E00F55A09 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF596528D6FF8E00F55A09 /* AuthViewController.swift */; };
@@ -63,6 +64,7 @@
 		9C1B24C628EB4BDF008C19C7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9C1B24C828EDEFEF008C19C7 /* InsertableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertableTextField.swift; sourceTree = "<group>"; };
 		9C1B24CA28EDF02E008C19C7 /*  UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " UIView + Extension.swift"; sourceTree = "<group>"; };
+		9C1B24CC28EF3877008C19C7 /* ChatRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRequestViewController.swift; sourceTree = "<group>"; };
 		9CEF595E28D6FF8E00F55A09 /* MyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEF596128D6FF8E00F55A09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CEF596328D6FF8E00F55A09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				9CEF599428DCE50400F55A09 /* ListViewController.swift */,
 				9CEF599628DCE52B00F55A09 /* PeopleViewController.swift */,
 				9C1B24C628EB4BDF008C19C7 /* ProfileViewController.swift */,
+				9C1B24CC28EF3877008C19C7 /* ChatRequestViewController.swift */,
 				9C1B24B528E76E2F008C19C7 /* Cell */,
 				9C1B24BA28E993BC008C19C7 /* Header */,
 			);
@@ -312,6 +315,7 @@
 				9CEF598C28D8DD1900F55A09 /* SetupProfileViewController.swift in Sources */,
 				9C1B24C728EB4BDF008C19C7 /* ProfileViewController.swift in Sources */,
 				9CEF599728DCE52B00F55A09 /* PeopleViewController.swift in Sources */,
+				9C1B24CD28EF3877008C19C7 /* ChatRequestViewController.swift in Sources */,
 				9CEF597C28D7133000F55A09 /* Label + Extension.swift in Sources */,
 				9CEF598428D757C600F55A09 /* FilStackView + Entension.swift in Sources */,
 				9CEF598E28D8DD3A00F55A09 /* AddPhotoView.swift in Sources */,
