@@ -29,6 +29,7 @@
 		9C1B24F828F48651008C19C7 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B24F728F48651008C19C7 /* AuthService.swift */; };
 		9C1B24FB28F72059008C19C7 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B24FA28F72059008C19C7 /* Validators.swift */; };
 		9C1B24FD28F72070008C19C7 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B24FC28F72070008C19C7 /* AuthError.swift */; };
+		9C1B252E28F893CE008C19C7 /* activeChats.json  in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B252D28F893CE008C19C7 /* activeChats.json  */; };
 		9CEF596228D6FF8E00F55A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF596128D6FF8E00F55A09 /* AppDelegate.swift */; };
 		9CEF596428D6FF8E00F55A09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF596328D6FF8E00F55A09 /* SceneDelegate.swift */; };
 		9CEF596628D6FF8E00F55A09 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF596528D6FF8E00F55A09 /* AuthViewController.swift */; };
@@ -76,6 +77,7 @@
 		9C1B24F728F48651008C19C7 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		9C1B24FA28F72059008C19C7 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 		9C1B24FC28F72070008C19C7 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
+		9C1B252D28F893CE008C19C7 /* activeChats.json  */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "activeChats.json "; sourceTree = "<group>"; };
 		9CEF595E28D6FF8E00F55A09 /* MyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEF596128D6FF8E00F55A09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CEF596328D6FF8E00F55A09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				9C1B24CA28EDF02E008C19C7 /*  UIView + Extension.swift */,
 				9C1B24AC28E4C573008C19C7 /* activeChats.json */,
 				9C1B24AE28E4C57E008C19C7 /* waitingChats.json */,
+				9C1B252D28F893CE008C19C7 /* activeChats.json  */,
 				9C1B24B828E99363008C19C7 /* users.json */,
 			);
 			path = UIKit;
@@ -341,6 +344,7 @@
 			files = (
 				9C1B24B928E99363008C19C7 /* users.json in Resources */,
 				9CEF596E28D6FF8F00F55A09 /* LaunchScreen.storyboard in Resources */,
+				9C1B252E28F893CE008C19C7 /* activeChats.json  in Resources */,
 				9C1B24D528EF48CB008C19C7 /* GoogleService-Info.plist in Resources */,
 				9C1B24AD28E4C573008C19C7 /* activeChats.json in Resources */,
 				9CEF596B28D6FF8F00F55A09 /* Assets.xcassets in Resources */,
