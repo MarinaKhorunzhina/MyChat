@@ -5,6 +5,9 @@
 //  Created by Marina on 18.09.22.
 //
 
+import UIKit
+import FirebaseAuth
+
 class SignUpViewController: UIViewController {
     
     let welcomeLabel = UILabel(text: "Welcome to MyCHAT", font: .avenir26())
@@ -44,9 +47,9 @@ class SignUpViewController: UIViewController {
                                     confirmPassword: confirmPasswordTextField.text) { (result) in
                                         switch result {
                                             
-                                        case .success(_):
+                                        case .success(let user):
                                             self.showAlert(with: "Успешно!", and: "Вы зарегистрированны!") {
-                                                self.present(SetupProfileViewController(), animated: true, completion: nil)
+                                                self.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
                                             }
                                         case .failure(let error):
                                             self.showAlert(with: "Ошибка!", and: error.localizedDescription)
