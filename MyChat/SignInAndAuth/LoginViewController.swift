@@ -6,6 +6,7 @@
 //
 
 import UIKit
+//import GoogleSignIn
 
 class LoginViewController: UIViewController {
     
@@ -39,8 +40,13 @@ class LoginViewController: UIViewController {
         setupConstraints()
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         signUpButton.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
+     //   googleButton.addTarget(self, action: #selector(googleButtonTapped), for: .touchUpInside)
     }
     
+//    @objc private func googleButtonTapped() {
+//        GIDSignIn.sharedInstance()?.presentingViewController = self
+//        GIDSignIn.sharedInstance().signIn()
+//    }
     @objc private func loginButtonTapped() {
         AuthService.shared.login(
             email: emailTextField.text!,
