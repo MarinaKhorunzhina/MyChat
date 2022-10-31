@@ -30,9 +30,9 @@ class SetupProfileViewController: UIViewController {
         self.currentUser = currentUser
         super.init(nibName: nil, bundle: nil)
         
-//        if let username = currentUser.displayName {
-//            fullNameTextField.text = username
-//        }
+     if let username = currentUser.displayName {
+           fullNameTextField.text = username
+        }
 //        // TODO set google image
     }
     
@@ -45,7 +45,18 @@ class SetupProfileViewController: UIViewController {
         view.backgroundColor = #colorLiteral(red: 0.9047287703, green: 0.9161183238, blue: 0.9159179926, alpha: 1)
         setupConstraints()
         goToChatsButton.addTarget(self, action: #selector(goToChatsButtonTapped), for: .touchUpInside)
+        fullImageView.plusButton.addTarget(self, action: #selector(plusButtonTapped), for: .touchUpInside)
     }
+}
+    // MARK: - Actions
+    extension SetupProfileViewController {
+        @objc private func plusButtonTapped() {
+            let imagePickerController = UIImagePickerController()
+            imagePickerController.delegate = self
+            imagePickerController.sourceType = .photoLibrary
+            present(imagePickerController, animated: true, completion: nil)
+        }
+        
     @objc private func goToChatsButtonTapped() {
         
         FirestoreService.shared.saveProfileWith(
@@ -114,7 +125,15 @@ extension SetupProfileViewController {
         ])
     }
 }
-
+    // MARK: - UIImagePickerControllerDelegate
+    extension SetupProfileViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+            
+            picker.dismiss(animated: true, completion: nil)
+            guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }
+            fullImageView.circleImageView.image = image
+        }
+    }
 // MARK: - SwiftUI
 import SwiftUI
 

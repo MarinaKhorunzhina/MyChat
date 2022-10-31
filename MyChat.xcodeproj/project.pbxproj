@@ -32,7 +32,7 @@
 		9C1B257529052C33008C19C7 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B257429052C33008C19C7 /* FirestoreService.swift */; };
 		9C1B257729052CFA008C19C7 /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B257629052CFA008C19C7 /* UserError.swift */; };
 		9C1B25792909C180008C19C7 /* UIAplication + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B25782909C180008C19C7 /* UIAplication + Extension.swift */; };
-		9C46A48729102D9300AFA562 /*  StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C46A48629102D9300AFA562 /*  StorageService.swift */; };
+		9C46A48729102D9300AFA562 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C46A48629102D9300AFA562 /* StorageService.swift */; };
 		9C46A489291035C100AFA562 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C46A488291035C100AFA562 /* UIImage + Extension.swift */; };
 		9CEF596228D6FF8E00F55A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF596128D6FF8E00F55A09 /* AppDelegate.swift */; };
 		9CEF596428D6FF8E00F55A09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF596328D6FF8E00F55A09 /* SceneDelegate.swift */; };
@@ -87,7 +87,7 @@
 		9C1B257429052C33008C19C7 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 		9C1B257629052CFA008C19C7 /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
 		9C1B25782909C180008C19C7 /* UIAplication + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAplication + Extension.swift"; sourceTree = "<group>"; };
-		9C46A48629102D9300AFA562 /*  StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " StorageService.swift"; sourceTree = "<group>"; };
+		9C46A48629102D9300AFA562 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		9C46A488291035C100AFA562 /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
 		9CEF595E28D6FF8E00F55A09 /* MyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEF596128D6FF8E00F55A09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -185,7 +185,7 @@
 				9C1B24BF28E99582008C19C7 /* Model */,
 				9C1B24F728F48651008C19C7 /* AuthService.swift */,
 				9C1B257429052C33008C19C7 /* FirestoreService.swift */,
-				9C46A48629102D9300AFA562 /*  StorageService.swift */,
+				9C46A48629102D9300AFA562 /* StorageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -451,7 +451,7 @@
 				9CEF598A28D8D41000F55A09 /* LoginViewController.swift in Sources */,
 				9CEF599528DCE50400F55A09 /* ListViewController.swift in Sources */,
 				9C46A489291035C100AFA562 /* UIImage + Extension.swift in Sources */,
-				9C46A48729102D9300AFA562 /*  StorageService.swift in Sources */,
+				9C46A48729102D9300AFA562 /* StorageService.swift in Sources */,
 				9CEF596428D6FF8E00F55A09 /* SceneDelegate.swift in Sources */,
 				9C1B25792909C180008C19C7 /* UIAplication + Extension.swift in Sources */,
 				9C1B24F828F48651008C19C7 /* AuthService.swift in Sources */,

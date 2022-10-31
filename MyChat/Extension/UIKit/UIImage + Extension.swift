@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import UIKit
+
 extension UIImage {
     
     var scaledToSafeUploadSize: UIImage? {

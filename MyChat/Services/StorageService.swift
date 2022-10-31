@@ -5,7 +5,6 @@
 //  Created by Marina on 31.10.22.
 //
 
-import Foundation
 import UIKit
 import FirebaseAuth
 import FirebaseStorage

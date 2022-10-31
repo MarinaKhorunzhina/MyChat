@@ -40,23 +40,33 @@ class FirestoreService {
             completion(.failure(UserError.notFilled))
             return
         }
+        
         guard avatarImage != #imageLiteral(resourceName: "avatar") else {
             completion(.failure(UserError.photoNotExist))
             return
         }
         
-        let muser = MUser(username: username!,
+        var muser = MUser(username: username!,
                           email: email,
                           avatarStringURL: "not exist",
                           description: description!,
                           sex: sex!,
                           id: id)
-        self.usersRef.document(muser.id).setData(muser.representation) { (error) in
-            if let error = error {
+        StorageService.shared.upload(photo: avatarImage!) { (result) in
+            switch result {
+                
+            case .success(let url):
+                muser.avatarStringURL = url.absoluteString
+                self.usersRef.document(muser.id).setData(muser.representation) { (error) in
+                    if let error = error {
+                        completion(.failure(error))
+                    } else {
+                        completion(.success(muser))
+                    }
+                }
+            case .failure(let error):
                 completion(.failure(error))
-            } else {
-                completion(.success(muser))
             }
-        }
-    }
+        } // StorageService
+    } // saveProfileWith
 }
