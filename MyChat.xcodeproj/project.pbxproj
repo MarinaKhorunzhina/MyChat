@@ -35,6 +35,7 @@
 		9C46A48729102D9300AFA562 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C46A48629102D9300AFA562 /* StorageService.swift */; };
 		9C46A489291035C100AFA562 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C46A488291035C100AFA562 /* UIImage + Extension.swift */; };
 		9C46A48B2912EA1D00AFA562 /* ListenerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C46A48A2912EA1D00AFA562 /* ListenerService.swift */; };
+		9C46A48D29159B7900AFA562 /* MMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C46A48C29159B7900AFA562 /* MMessage.swift */; };
 		9CEF596228D6FF8E00F55A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF596128D6FF8E00F55A09 /* AppDelegate.swift */; };
 		9CEF596428D6FF8E00F55A09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF596328D6FF8E00F55A09 /* SceneDelegate.swift */; };
 		9CEF596628D6FF8E00F55A09 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF596528D6FF8E00F55A09 /* AuthViewController.swift */; };
@@ -91,6 +92,7 @@
 		9C46A48629102D9300AFA562 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		9C46A488291035C100AFA562 /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
 		9C46A48A2912EA1D00AFA562 /* ListenerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerService.swift; sourceTree = "<group>"; };
+		9C46A48C29159B7900AFA562 /* MMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMessage.swift; sourceTree = "<group>"; };
 		9CEF595E28D6FF8E00F55A09 /* MyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEF596128D6FF8E00F55A09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CEF596328D6FF8E00F55A09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			children = (
 				9C1B24BB28E99528008C19C7 /* MUser.swift */,
 				9C1B24BD28E99545008C19C7 /* MChat.swift */,
+				9C46A48C29159B7900AFA562 /* MMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 				9C46A489291035C100AFA562 /* UIImage + Extension.swift in Sources */,
 				9C46A48729102D9300AFA562 /* StorageService.swift in Sources */,
 				9CEF596428D6FF8E00F55A09 /* SceneDelegate.swift in Sources */,
+				9C46A48D29159B7900AFA562 /* MMessage.swift in Sources */,
 				9C1B25792909C180008C19C7 /* UIAplication + Extension.swift in Sources */,
 				9C1B24F828F48651008C19C7 /* AuthService.swift in Sources */,
 				9CEF597628D70EFF00F55A09 /* UIButton + Extension.swift in Sources */,
