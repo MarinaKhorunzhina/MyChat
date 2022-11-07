@@ -18,6 +18,7 @@ class ListViewController: UIViewController {
     
     enum Section: Int, CaseIterable {
         case  waitingChats, activeChats
+        
         func description() -> String {
             switch self {
             case .waitingChats:
@@ -25,8 +26,9 @@ class ListViewController: UIViewController {
             case .activeChats:
                 return "Active chats"
             }
+        }
     }
-}
+    
     var dataSource: UICollectionViewDiffableDataSource<Section, MChat>?
     var collectionView: UICollectionView!
     
@@ -54,6 +56,7 @@ class ListViewController: UIViewController {
         setupCollectionView()
         createDataSource()
         reloadData()
+        
         waitingChatsListener = ListenerService.shared.waitingChatsObserve(chats: waitingChats, completion: { (result) in
             switch result {
             case .success(let chats):
@@ -101,6 +104,8 @@ class ListViewController: UIViewController {
         
         collectionView.register(ActiveChatCell.self, forCellWithReuseIdentifier: ActiveChatCell.reuseId)
         collectionView.register(WaitingChatCell.self, forCellWithReuseIdentifier: WaitingChatCell.reuseId)
+        
+        collectionView.delegate = self
     }
     
     private func reloadData() {
@@ -113,9 +118,10 @@ class ListViewController: UIViewController {
 
         dataSource?.apply(snapshot, animatingDifferences: true)
     }
-
+}
 
 // MARK: - Data Source
+extension ListViewController {
     
     private func createDataSource() {
         dataSource = UICollectionViewDiffableDataSource<Section, MChat>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, chat) -> UICollectionViewCell? in
@@ -137,13 +143,12 @@ class ListViewController: UIViewController {
             guard let section = Section(rawValue: indexPath.section) else { fatalError("Unknown section kind") }
             sectionHeader.configure(text: section.description(),
                                     font: .laoSangamMN20(),
-                                    textColor: .gray)
+                                    textColor: #colorLiteral(red: 0.5741485357, green: 0.5741624236, blue: 0.574154973, alpha: 1))
             return sectionHeader
         }
-
     }
-
 }
+
 // MARK: - Setup layout
 extension ListViewController {
     private func createCompositionalLayout() -> UICollectionViewLayout {
@@ -184,7 +189,6 @@ extension ListViewController {
         
         let sectionHeader = createSectionHeader()
         section.boundarySupplementaryItems = [sectionHeader]
-        
         return section
     }
     
@@ -203,9 +207,9 @@ extension ListViewController {
         
         let sectionHeader = createSectionHeader()
         section.boundarySupplementaryItems = [sectionHeader]
-        
         return section
     }
+    
     private func createSectionHeader() -> NSCollectionLayoutBoundarySupplementaryItem {
         let sectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
                                                        heightDimension: .estimated(1))
@@ -214,8 +218,55 @@ extension ListViewController {
                                                                         alignment: .top)
         
         return sectionHeader
- }
+    }
 }
+
+// MARK: - UICollectionViewDelegate
+extension ListViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let chat = self.dataSource?.itemIdentifier(for: indexPath) else { return }
+        guard let section = Section(rawValue: indexPath.section) else { return }
+        
+        switch section {
+        case .waitingChats:
+            let chatRequestVC = ChatRequestViewController(chat: chat)
+            chatRequestVC.delegate = self
+            self.present(chatRequestVC, animated: true, completion: nil)
+        case .activeChats:
+            print(indexPath)
+            let chatsVC = ChatsViewController(user: currentUser, chat: chat)
+            navigationController?.pushViewController(chatsVC, animated: true)
+        }
+    }
+}
+
+// MARK: - WaitingChatsNavigation
+extension ListViewController: WaitingChatsNavigation {
+    func removeWaitingChat(chat: MChat) {
+        FirestoreService.shared.deleteWaitingChat(chat: chat) { (result) in
+            switch result {
+            case .success:
+                self.showAlert(with: "Успешно!", and: "Чат с \(chat.friendUsername) был удален")
+            case .failure(let error):
+                self.showAlert(with: "Ошибка!", and: error.localizedDescription)
+            }
+        }
+    }
+    
+    func changeToActive(chat: MChat) {
+        print(#function)
+        FirestoreService.shared.changeToActive(chat: chat) { (result) in
+            switch result {
+            case .success:
+                self.showAlert(with: "Успешно!", and: "Приятного общения с \(chat.friendUsername).")
+            case .failure(let error):
+                self.showAlert(with: "Ошибка!", and: error.localizedDescription)
+            }
+        }
+    }
+}
+
 // MARK: - UISearchBarDelegate
 extension ListViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -244,3 +295,4 @@ struct ListVCProvider: PreviewProvider {
         }
     }
 }
+
