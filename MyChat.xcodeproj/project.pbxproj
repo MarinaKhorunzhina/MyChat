@@ -37,6 +37,7 @@
 		9C46A48B2912EA1D00AFA562 /* ListenerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C46A48A2912EA1D00AFA562 /* ListenerService.swift */; };
 		9C46A48D29159B7900AFA562 /* MMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C46A48C29159B7900AFA562 /* MMessage.swift */; };
 		9C46A48F2919732C00AFA562 /* WaitingChatsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C46A48E2919732C00AFA562 /* WaitingChatsNavigation.swift */; };
+		9C46A491291978F300AFA562 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C46A490291978F300AFA562 /* ChatsViewController.swift */; };
 		9CEF596228D6FF8E00F55A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF596128D6FF8E00F55A09 /* AppDelegate.swift */; };
 		9CEF596428D6FF8E00F55A09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF596328D6FF8E00F55A09 /* SceneDelegate.swift */; };
 		9CEF596628D6FF8E00F55A09 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF596528D6FF8E00F55A09 /* AuthViewController.swift */; };
@@ -95,6 +96,7 @@
 		9C46A48A2912EA1D00AFA562 /* ListenerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerService.swift; sourceTree = "<group>"; };
 		9C46A48C29159B7900AFA562 /* MMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMessage.swift; sourceTree = "<group>"; };
 		9C46A48E2919732C00AFA562 /* WaitingChatsNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatsNavigation.swift; sourceTree = "<group>"; };
+		9C46A490291978F300AFA562 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		9CEF595E28D6FF8E00F55A09 /* MyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEF596128D6FF8E00F55A09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CEF596328D6FF8E00F55A09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -199,14 +201,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		9C1B24F928F72019008C19C7 /* New Group */ = {
+		9C1B24F928F72019008C19C7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				9C1B24FA28F72059008C19C7 /* Validators.swift */,
 				9C1B24FC28F72070008C19C7 /* AuthError.swift */,
 				9C1B257629052CFA008C19C7 /* UserError.swift */,
 			);
-			path = "New Group";
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		9CEF595528D6FF8E00F55A09 = {
@@ -237,7 +239,7 @@
 				9C1B24B428E76E06008C19C7 /* Protocol */,
 				9CEF599128DCE38600F55A09 /* SignInAndAuth */,
 				9CEF598028D72B6F00F55A09 /* Extension */,
-				9C1B24F928F72019008C19C7 /* New Group */,
+				9C1B24F928F72019008C19C7 /* Helpers */,
 				9CEF596A28D6FF8F00F55A09 /* Assets.xcassets */,
 				9CEF596C28D6FF8F00F55A09 /* LaunchScreen.storyboard */,
 				9CEF596F28D6FF8F00F55A09 /* Info.plist */,
@@ -300,6 +302,7 @@
 				9CEF599628DCE52B00F55A09 /* PeopleViewController.swift */,
 				9C1B24C628EB4BDF008C19C7 /* ProfileViewController.swift */,
 				9C1B24CC28EF3877008C19C7 /* ChatRequestViewController.swift */,
+				9C46A490291978F300AFA562 /* ChatsViewController.swift */,
 				9C1B24B528E76E2F008C19C7 /* Cell */,
 				9C1B24BA28E993BC008C19C7 /* Header */,
 			);
@@ -452,6 +455,7 @@
 				9CEF598228D753FA00F55A09 /* ButtonFormView.swift in Sources */,
 				9CEF596228D6FF8E00F55A09 /* AppDelegate.swift in Sources */,
 				9C1B24CB28EDF02E008C19C7 /*  UIView + Extension.swift in Sources */,
+				9C46A491291978F300AFA562 /* ChatsViewController.swift in Sources */,
 				9CEF599028DB72B400F55A09 /* SegmentedControl + Extension.swift in Sources */,
 				9CEF597E28D7146F00F55A09 /* UIImageView + Extension.swift in Sources */,
 				9C1B2551290196CB008C19C7 /* AuthNavigatingDelegate.swift in Sources */,
